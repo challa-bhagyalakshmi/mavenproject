@@ -18,7 +18,7 @@ echo "testing the code"
 bat "mvn test"
 }
 }
-stage ('compile')
+stage('compile')
 {
 steps {
 echo "compiling the project"
@@ -27,7 +27,7 @@ bat 'mvn compile'
 }
 stage('deploy')
 {
-steps{
+steps {
 echo"deploying the project"
 bat "mvn deploy"
 }
